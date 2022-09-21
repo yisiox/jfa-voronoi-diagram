@@ -26,7 +26,6 @@ cmap.set_under("black")
 def generateRandomSeeds(n):
     """
     Function to generate n random seeds.
-    Fills table with mapping.
 
     @param n The number of seeds to generate.
     """
@@ -103,7 +102,7 @@ voronoiKernel = cp.RawKernel(r"""
 def JFAVoronoiDiagram():
     global ping, pong
     # compute initial step size
-    step = y_dim // 2
+    step = max(x_dim, y_dim) // 2
     # initalise frame number and display original state
     frame = 0
     displayDiagram(frame, ping)
