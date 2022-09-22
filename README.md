@@ -1,4 +1,5 @@
 # jfa-voronoi-diagram
-Small project learning the Jump Flooding Algorithm using the GPU to compute Voronoi Diagrams. Implemented using CuPy.
+Small project learning the Jump Flooding Algorithm using the GPU, applied to computing Voronoi diagrams. Implemented using CuPy.
 
-Possible TODO: improve C segment of code.
+Possible improvements: 
+C segment of code.
