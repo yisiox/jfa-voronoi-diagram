@@ -56,6 +56,7 @@ def displayDiagram(frame, graph):
     Function to display and save the current state of the diagram.
 
     @param frame The current frame.
+    @oaram graph The graph to be displayed.
     """
     output = cp.asnumpy(displayKernel(graph))
     plt.imshow(output, cmap = cmap, vmin = 0.0, interpolation = "none")
